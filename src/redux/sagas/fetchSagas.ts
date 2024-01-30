@@ -12,7 +12,7 @@ export const catTypeGuard = async (data: TCat[]) => {
 
 export function* catsFetchSaga() {
   try {
-    const cats: TCat[] = yield call(getCats, 12)
+    const cats: TCat[] = yield call(getCats, 20)
     const check: boolean = yield call(catTypeGuard, cats)
 
     if (check) {
